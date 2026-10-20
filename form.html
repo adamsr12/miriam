@@ -1,0 +1,197 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Form</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Belleza&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Gabarito:wght@400..900&family=Luxurious+Roman&family=Playball&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Strike&display=swap" rel="stylesheet">
+	<style>
+		body {
+			display: flex;
+			justify-content: center;
+			background-image: url("ikhlas-OPvpcO8Tq3c-unsplash.jpg");
+			background-size: cover;
+		}
+		#page {
+			max-width: 600px;
+			align-items: center;
+			padding: 30px 30px 30px 30px;
+			margin: 10px 30px 10px 30px;
+			border: 10px rgba(0,0,0,1.00);
+			display: flex;
+			justify-content: center;
+		}
+		h1 {
+			text-align: center;
+			font-family: "Martel Sans", sans-serif;
+  			font-weight: 300;
+			font-style: normal;
+			font-size: 2.5rem;
+		}
+		form {
+			padding: 30px 80px 60px 80px;
+			border-radius: 20px;
+			background-color: rgba(255,255,255,1);
+		}
+		fieldset {
+			margin: 20px auto;
+			border: 1px solid rgba(0,0,0,0.25);
+			border-radius: 10px
+		}
+		fieldset label {
+			text-align: left;
+			font-family: "Martel Sans", sans-serif;
+  			font-weight: 300;
+			font-style: normal;
+			font-size: .875rem;	
+			line-height: 1.5rem;
+		}
+		legend {
+			text-align: left;
+			font-family: "Martel Sans", sans-serif;
+  			font-weight: 400;
+			font-style: normal;
+			font-size: 1rem;
+		}
+		label {
+			font-family: 
+		}
+		.Type {
+			text-align: left;
+			font-family: "Martel Sans", sans-serif;
+  			font-weight: 400;
+			font-style: normal;
+			font-size: 1rem;
+			margin: 10px auto;
+			// background: pink;			
+		}
+		input[type="text"], input[type="tel"] {
+			width: 350px;
+			text-align: left;
+			font-family: "Martel Sans", sans-serif;
+  			font-weight: 200;
+			font-style: normal;
+			Height: 1.5rem;
+			font-size: .875rem;
+			Margin: 5px 0px 5px 0px;
+			border: 1px solid rgb(0,0,0,0.25);
+			border-radius: 5px;
+			background-color: rgba(0,0,0,0.00);
+			padding: 5px 12px 5px 12px;
+		} 
+		input[type="radio"], input[type="checkbox"] {
+			transform: scale(1.2);
+			accent-color: rgba(24, 152, 194, 0.8);
+		}
+		.checks {
+			margin: 4px auto;
+			line-height: 1.75rem;
+		} 	
+		::placeholder {
+			color: rgba(0,0,0,0.5);
+		}
+		input[type="submit"] {
+			font-family: "Martel Sans", sans-serif;
+  			font-weight: 200;
+			font-style: normal;
+			font-size: 1rem;
+			background-color: rgba(0,0,0,1.00);
+			color: white;
+			border-radius: 5px;
+			padding: 5px 10px;
+			border: hidden;
+			display: block;
+			margin-left: auto;
+		}
+		select {
+			font-family: "Martel Sans", sans-serif;
+  			font-weight: 200;
+			font-style: normal;
+			font-size: .8rem;
+			border-radius: 5px;
+			padding: 5px 10px;
+			border: 1px solid rgb(0,0,0,0.25);
+			width: 100%;
+		}
+		label[for="Contact"] {
+			font-family: "Martel Sans", sans-serif;
+  			font-weight: 400;
+			font-style: normal;
+			font-size: 1rem;
+		}
+		#dropdown {
+			
+		}
+	</style>
+</head>
+<body>
+	<div id="page">
+	<form>
+	<h1>Contact Me</h1>
+		<div id="Name" class="Type">
+		<label for="Name">Name</label> 
+				<br>
+			<input type="text" id="IName" name="IName" placeholder="Jane Doe">
+				<br>
+		</div>
+		<div id="Email" class="Type">
+		<label for="Email">Email</label>
+				<br>
+			<input type="text" id="IEmail" name="IEmail" placeholder="ex. janedoe@mail.com"> 
+				<br>
+		</div>
+		<div id="Phone" class="Type">
+		<label for="Phone">Phone Number</label> 
+				<br>
+			<input type="tel" id="IPhone" name="IPhone"
+				placeholder="###-###-####"
+  				pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+				<br>
+		</div>
+	<fieldset id="perferred">
+		<legend>Perferred Contact Method</legend>
+		<div class="checks">
+			<input type="radio" id="email" Name="contact" Value="Email">
+		<label for="Email">Email</label> 
+				<br>
+			<input type="radio" id="Text_Message" Name="contact" Value="Text_Message">
+		<label for="Text_Message">Text Message</label> 
+				<br>
+			<input type="radio" id="phone" Name="contact" Value="Phone">
+		<label for="Phone">Phone</label> 
+				<br>
+	</div>
+	</fieldset>
+	<fieldset id="services">
+		<legend>What Service(s) are you Interested in?</legend>
+		<div class="checks">
+		<input type="checkbox" id="Website development" Value="Website Development" name="Website Development">
+				<label for="Web_Dev">Website Development</label> 
+					<br>
+		<input type="checkbox" id="Brand Development" value="Brand_Development" Name="Brand_Development">
+			<label for="Brand Development">Brand Development</label>
+				<br>
+		<input type="checkbox" id="Flyeretc" value="Flyeretc" Name="Flyeretc">
+			<label for="Flyeretc">Flyers, Infographics, Social Media Graphic, etc.</label>
+				<br>
+		<input type="checkbox" id="Other" value="Other" Name="Other">
+			<label for="Other">Other</label>
+				<br>
+		</div>
+	</fieldset>
+		<div id="dropdown">
+		<label for="Contact">Best Time to Contact You</label>
+		<br>
+		<select>
+		<option>Morning (8 AM-12 PM)</option>
+		<option>Afternoon (12 PM-5 PM)</option>
+			<option>Evening (5 PM- 8PM)</option>
+			<option>Any Time</option>
+		</select> </div>
+		<br>
+	<input type="submit" id="submit" value="submit">
+	</form>
+	</div>
+</body>
+</html>
